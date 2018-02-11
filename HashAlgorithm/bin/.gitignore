@@ -1,6 +1,8 @@
 /.classpath
 /.project
 /.settings/
+/README.md
 /com/
-/hash.txt
 /hash.sha1
+/hash.sha2
+/hash.txt

@@ -1,4 +1,4 @@
-package com.sdrttnclskn.sha1;
+package com.sdrttnclskn.sha;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -23,7 +23,9 @@ public class HashMain {
 		bWriter.write(txt);
 		bWriter.close();
 
-		Sha1Algorithm.sha1(file);
+		SHA1Algorithm.sha1(file);
+		SHA2Algorithm.sha1(file);
+
 
 	}
 

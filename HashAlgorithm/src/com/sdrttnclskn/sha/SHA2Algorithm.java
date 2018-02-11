@@ -1,4 +1,4 @@
-package com.sdrttnclskn.sha1;
+package com.sdrttnclskn.sha;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -10,11 +10,11 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Formatter;
 
-public class Sha1Algorithm {
+public class SHA2Algorithm {
 
 	public static String sha1(File file) throws NoSuchAlgorithmException, IOException {
 
-		final MessageDigest messageDigest = MessageDigest.getInstance("SHA1");
+		final MessageDigest messageDigest = MessageDigest.getInstance("SHA-256");
 
 		try {
 
@@ -56,9 +56,9 @@ public class Sha1Algorithm {
 
 		}
 
-		FileWriter fwSha1 = new FileWriter("hash.sha1");
-		fwSha1.write(x);
-		fwSha1.close();
+		FileWriter fwSha2 = new FileWriter("hash.sha2");
+		fwSha2.write(x);
+		fwSha2.close();
 		return x;
 
 	}
